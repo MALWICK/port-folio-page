@@ -72,12 +72,12 @@ section {
 }
 
 .heading2 {
-    color: #000;
-    padding-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
+  color: #000;
+  padding-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 
 .btn {
