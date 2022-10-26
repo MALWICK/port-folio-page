@@ -1,0 +1,20 @@
+* {
+  font-family: Verdana,Tahoma, sans-serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0; color: white;
+}
+.nav a {   
+        color: #faf2f2;
+        text-decoration-line: none;
+        font-size: 30px;
+  }
+.nav {
+    background-color: #d93737;
+    display: flex;
+    justify-content: flex-end;
+    padding: 35px;
+    gap: 30px;
+    width: 96%;
+  }
+  
