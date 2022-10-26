@@ -48,3 +48,46 @@ h2 {
   font-size: 3.3em;
   text-align: center;
 }
+
+section {
+  background-color: #2f3f5b;
+  color: #fafafa;
+  height: 120vh;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap; 
+  margin: auto;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.project:hover {
+  border: 1px solid #777;
+}
+
+.heading2 {
+    color: #000;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.btn {
+  margin: auto;
+  display: flex;
+  height: 35px;
+  width: 5%;
+  text-align: center;
+  background-color: #2b2d2f;
+  color: #f4efef;
+  font-size: large;
+  border-radius: 3px;
+}
