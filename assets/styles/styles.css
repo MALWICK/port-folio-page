@@ -96,7 +96,7 @@ section {
   background-color: #272a30;
   color: #fafafa;
   height: 120vh;
-  width: 100%;
+  width: auto;
   flex-direction: column;
   display: flex;
   text-align: center;
@@ -123,7 +123,7 @@ figcaption {
   gap: 3rem;
   text-transform: uppercase;
   font-style: italic;
-  margin: auto;  
+  margin: auto;
 }
 
 .contact-links {
@@ -137,12 +137,12 @@ figcaption {
   padding: 10em;
   text-decoration: none;
   font-size: 22px;
-  color: #ffff,  
+  color: #fff;
 }
 
 .footer {
   background-color: #1a1e22;
-  width: 98%;
+  width: auto;
   height: 17vh;
   flex-direction: column;
   display: flex;
@@ -165,5 +165,3 @@ figcaption {
   justify-content: center;
   padding: left;
 }
-
-
