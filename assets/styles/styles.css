@@ -2,10 +2,10 @@
   font-family: Verdana, Tahoma, sans-serif;
   font-weight: 100;
   margin: 0;
-  padding: 0; color: white;
+  padding: auto;
 }
 
-a { 
+a {
   color: #faf2f2;
   text-decoration-line: none;
   font-size: 30px;
