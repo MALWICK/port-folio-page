@@ -91,3 +91,79 @@ section {
   font-size: large;
   border-radius: 3px;
 }
+
+.contact {
+  background-color: #272a30;
+  color: #fafafa;
+  height: 120vh;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+h3 {
+  font-size: 70px;
+  margin: 20px 20px;
+}
+
+.coffee {
+  font-size: 20px;
+  color: #763030;
+}
+
+figcaption {
+  background-color: #292b2d;
+  color: white;
+  font-size: large;
+  height: 6vh;
+  gap: 3rem;
+  text-transform: uppercase;
+  font-style: italic;
+  margin: auto;  
+}
+
+.contact-links {
+  display: flex;
+}
+
+.contact-links {
+  gap: 1rem;
+  margin: 2px;
+  justify-content: center;
+  padding: 10em;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ffff,  
+}
+
+.footer {
+  background-color: #1a1e22;
+  width: 98%;
+  height: 17vh;
+  flex-direction: column;
+  display: flex;
+  margin: auto;
+  padding: 20px;
+}
+
+.p2 {
+  font-size: 20px;
+  margin: auto;
+  color: #ffff,
+}
+
+.footer-paragraph {
+  display: block;
+  font-size: 25px;
+  color: #851515;
+  font-style: italic;
+  margin: auto;
+  justify-content: center;
+  padding: left;
+}
+
+
