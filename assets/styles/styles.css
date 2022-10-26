@@ -27,7 +27,7 @@ a {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
+  width: auto;
   text-align: center;
   justify-content: center;
   padding: auto;
@@ -41,11 +41,14 @@ a {
   text-align: center;
 }
 
- h2{
+h2 {
   font: bold;
   color: #f7faff;
   font-weight:30px;
   font-size: 3.2em;
   text-align: center;
- }
+}
+
+
+
 
