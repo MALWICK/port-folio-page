@@ -219,7 +219,7 @@ footer {
 .project-line {
   background-color: #dc1c1c;
   width: 90%;
-  padding: 0rem;
+  padding: 0.1rem;
 }
 
 .f-line {
@@ -230,31 +230,31 @@ footer {
 
 @media (max-width: 768px) {
   img {
-  width: 17rem;
-  height: 10rem;
-  padding-top: 4.5rem;
-}
+   width: 17rem;
+   height: 10rem;
+   padding-top: 4.5rem;
+  }
 
 figcaption {
-  margin: auto;
-  padding: 2%;
-  width: 96%;
+    margin: auto;
+    padding: 2%;
+    width: 96%;
+  }
+
+ .contact-links {
+    padding: 3rem;
+    gap: 1rem;
+  }
 }
 
-.contact-links {
-  padding: 3rem;
-  gap: 1rem;
- }
-}
-
-@media (min-width: 320px)  {
+@media (min-width: 320px) {
   img {
     width: 35rem;
     height: 20rem;
     padding-top: 3.5rem;
 }
 
-  figcaption {
+ figcaption {
     width: 96%;
   }
 }
