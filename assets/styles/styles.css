@@ -1,8 +1,12 @@
 * {
   font-family: Verdana, Tahoma, sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; 
   font-weight: 100;
-  margin: 0;
-  padding: auto;
+  color: rgb(255, 255, 254/30%);
 }
 
 a {
@@ -11,7 +15,7 @@ a {
   font-size: 30px;
 }
 
-.nav {
+.nav-container {
   background-color: #d93737;
   display: flex;
   justify-content: flex-end;
@@ -20,13 +24,35 @@ a {
   width: auto;
 }
 
+.navlist {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+  transition-duration: 0.6s;
+}
+
+.navlink {
+  color: #0b0b0b;
+  transition-duration: 0.6s;
+  cursor: pointer;
+}
+
+.navlink:hover {
+  color: #81858e;
+  border: 1px solid #212020;
+  background-color: #1e1c1c;
+}
+
 .welcome-section {
   background-color: #0e0d0d;
   color: #fffbfb;
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 80rem;
   width: auto;
   text-align: center;
   justify-content: center;
@@ -41,55 +67,56 @@ a {
   text-align: center;
 }
 
-h2 {
+header {
   font: bold;
   color: #f7faff;
-  font-weight: 30px;
-  font-size: 3.3em;
+  font-size: 2.6em;
   text-align: center;
 }
 
-section {
-  background-color: #2f3f5b;
-  color: #fafafa;
-  height: 120vh;
+.project-title {
+  font: bold;
+  color: #f7faff;
+  font-size: 1.6em;
+  text-align: center;
+}
+.project-section{
+  background-color: rgb(54, 54, 66);
+  height: 80rem;
   width: auto;
+  display: flex;
+  text-align: center;
   flex-direction: column;
-  display: flex;
-  text-align: center;
 }
 
-.images {
-  display: flex;
+ .flex-container {
   flex-wrap: wrap;
-  margin: auto;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.project:hover {
-  border: 1px solid #777;
-}
-
-.heading2 {
-  color: #000;
-  padding-bottom: 5px;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-
-.btn {
-  margin: auto;
   display: flex;
-  height: 6vh;
-  width: 25%;
-  text-align: center;
-  background-color: #2b2d2f;
-  color: #f4efef;
-  font-size: large;
   justify-content: center;
+  flex-direction: row;
+}
+
+.flex-container > div {
+  text-align: center;
+  gap: 1rem;
+  align-content: space-between;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 0 auto;
+  
+}
+
+img:hover {
+  border: 1px solid rgb(119, 119, 119);
+  background-color: #272a30;
+  color: #aeaee7;
+}
+
+img {
+  padding-top: 2.5rem;
+  width: 35rem;
+  height: 20rem;
+  transition-duration: 0.6s; 
 }
 
 .contact {
@@ -105,6 +132,33 @@ section {
   margin: auto;
 }
 
+.btn {
+  border: none;
+  color: #f4ecec;
+  padding: 10rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 4px 2px;
+  
+}
+
+button{
+  background-color: #272a30;
+  color: white;
+  width: auto;
+  height: 3rem;
+  font-size: 2rem;
+  border: 2px solid whitesmoke;
+}
+
+button:hover {
+  background-color: #f4ecec;
+  color: #0e0d0d;
+}
+
 h3 {
   font-size: 70px;
   margin: 40px;
@@ -117,34 +171,40 @@ h3 {
 
 figcaption {
   background-color: #292b2d;
-  color: white;
-  font-size: large;
-  height: 6vh;
-  gap: 2rem;
-  text-transform: uppercase;
+  color: #f7faff;
+  text-align: center;
   font-style: italic;
+  width: 97%;
   margin: auto;
+  padding: 10px;
 }
 
 .contact-links {
-  gap: 1rem;
+  gap: 2rem;
   margin: 2px;
   justify-content: center;
-  padding: 10em;
+  padding: 6rem;
   text-decoration: none;
   font-size: 22px;
   color: #fff;
   display: flex;
+  transition: 0.7s;
+  cursor: default;
 }
 
-.footer {
+.contact-links a:hover {
+  background-color: #fff8f8;
+  color: #a29999;
+
+}
+
+footer {
   background-color: #1a1e22;
   width: auto;
-  height: 12vh;
+  height: 22vh;
   flex-direction: column;
   display: flex;
-  margin: auto;
-  padding: 20px;
+  border-top: #b42222;
 }
 
 .p2 {
@@ -154,11 +214,50 @@ figcaption {
 }
 
 .footer-paragraph {
-  display: block;
   font-size: 25px;
   color: #f4ecec;
   font-style: italic;
+}
+
+.project-line {
+  background-color: #dc1c1c;
+  width: 90%;
+  padding: 0rem;
+}
+
+.f-line {
+  background-color: #dc1c1c;
+  width: 99%;
+  border: 0.2rem solid red;
+}
+
+@media (max-width: 768px) {
+  img {
+  width: 17rem;
+  height: 10rem;
+  padding-top: 4.5rem;
+}
+
+figcaption {
   margin: auto;
-  justify-content: center;
-  padding: left;
+  padding: 2%;
+  width: 96%;
+}
+
+.contact-links {
+  padding: 3rem;
+  gap: 1rem;
+ }
+}
+
+@media (min-width: 320px)  {
+  img {
+    width: 35rem;
+    height: 20rem;
+    padding-top: 3.5rem;
+}
+
+  figcaption {
+    width: 96%;
+  }
 }
